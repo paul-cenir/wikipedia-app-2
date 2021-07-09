@@ -6,6 +6,6 @@ export const WikipediaRoutes = RouterModule.forChild([
     {
         component: WikipediaComponent,
         path: 'search',
-        loadChildren:() => AppWikipediaModule,
+        loadChildren: "./wikipedia.module#AppWikipediaModule"
     },
 ]);
