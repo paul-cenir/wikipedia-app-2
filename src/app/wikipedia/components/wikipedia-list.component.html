@@ -5,7 +5,6 @@
     <div class="word-count">
         {{item.wordcount}}
     </div>
-    <div class="snippet">
-        {{item.snippet}}
+    <div class="snippet" [innerHTML]="item.snippet">
     </div>
 </div>
