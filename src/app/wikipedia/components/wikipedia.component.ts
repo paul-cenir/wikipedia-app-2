@@ -1,9 +1,20 @@
 import { WikipediaService } from './../http-services/wikipedia.service';
-import { Component } from '@angular/core';
-
+import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
     selector: 'wikipedia',
-    templateUrl: 'wikipedia.component.html'
+    templateUrl: 'wikipedia.component.html',
+    encapsulation: ViewEncapsulation.None,
+    styles: [`
+    .search-input {
+        width: 100%;
+        padding: 16px;
+    }
+    .list-container {
+        margin-top:20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  `],
 })
 export class WikipediaComponent  {
     searhList: any;
